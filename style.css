@@ -1,10 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:500');
 h1 {
     color: grey;
     font-size: 2em;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
 } 
+h2 {
+    color: black;
+}
 p {
     color: grey;
 }
 li {
     color: grey;
+}
+body {
+    color: grey;
+    font-family: "Roboto Mono";
+}
+a{
+    font-size: 20px;
+}
+a:link,
+a:visited {
+    color: grey;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+}
+#black {
+    color: black;
+}
+body {
+    background-color: beige
+}
+h2 {
+    background-color: yellow
 }
