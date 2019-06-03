@@ -21,6 +21,7 @@ body {
 }
 a{
     font-size: 20px;
+    background-color: yellow
 }
 a:link,
 a:visited {
@@ -37,5 +38,12 @@ body {
     background-color: beige
 }
 h2 {
-    background-color: yellow
+    /* background-color: yellow */
+}
+.highlight-h2 {
+    width: 7%;
+    background-color: red;
+}
+footer {
+    text-align: center;
 }
