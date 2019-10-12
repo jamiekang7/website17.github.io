@@ -77,3 +77,11 @@ body {
     margin-right: 40%;
     margin-top: 1%;
 }
+
+canvas {
+    background-color: white;
+    border-style: solid; 
+}
+section {
+    text-align: center; 
+}

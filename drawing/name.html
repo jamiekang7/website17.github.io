@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" href="../style.css">
+        <script src="drawRuler.js"></script>
+        <script src="drawName.js"></script>
+        <script> // A place where you can write JavaScript in.
+            var canvas;
+            var ctx;
+            const UNIT = 10;
+            // When the window is loaded, run the init function. 
+            window.onload = init; 
+            function init() {
+                // Setting value to canvas to connect HTML convas to JS canvas.
+                canvas = document.getElementById("myCanvas");
+                // Setting canvas' context to 2D.
+                ctx = canvas.getContext("2d");
+                drawName();
+                drawRuler(5);
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Name</h1>
+        </header>
+        <nav>
+            <a href="drawing.html">Drawing</a>
+        </nav>
+        <section>
+            <canvas id="myCanvas" width="1400" height="700"></canvas>
+        </section>
+        <footer>
+            <p id="black">&copy; 2019</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="drawRuler.js"></script>
+    <script src="drawName.js"></script>
+    <script> // A place where you can write JavaScript in.
+        var canvas;
+        var ctx;
+        const UNIT = 10;
+        // When the window is loaded, run the init function. 
+        window.onload = init; 
+        function init() {
+            // Setting value to canvas to connect HTML convas to JS canvas.
+            canvas = document.getElementById("myCanvas");
+            // Setting canvas' context to 2D.
+            ctx = canvas.getContext("2d");
+            draw();
+            drawRuler(5);
+        }
+        function draw() {
+            // Smiley Face
+            ctx.fillRect(30*UNIT,0,20*UNIT,20*UNIT);
+            // ctx.fillStyle = "red"; (to change color)
+            ctx.fillRect(100*UNIT,0,20*UNIT,20*UNIT);
+            ctx.fillRect(72*UNIT,30*UNIT,6*UNIT,6*UNIT);
+            ctx.fillRect(100*UNIT,50*UNIT,6*UNIT,6*UNIT);
+            ctx.fillRect(105*UNIT,45*UNIT,6*UNIT,6*UNIT);
+            ctx.fillRect(90*UNIT,60*UNIT,6*UNIT,6*UNIT);
+            ctx.fillRect(95*UNIT,55*UNIT,6*UNIT,6*UNIT);
+            ctx.fillRect(85*UNIT,65*UNIT,6*UNIT,6*UNIT);
+            ctx.fillRect(80*UNIT,65*UNIT,6*UNIT,6*UNIT);
+            ctx.fillRect(75*UNIT,65*UNIT,6*UNIT,6*UNIT);
+            ctx.fillRect(70*UNIT,65*UNIT,6*UNIT,6*UNIT);
+            ctx.fillRect(65*UNIT,65*UNIT,6*UNIT,6*UNIT);
+            ctx.fillRect(60*UNIT,65*UNIT,6*UNIT,6*UNIT);
+            ctx.fillRect(55*UNIT,60*UNIT,6*UNIT,6*UNIT);
+            ctx.fillRect(50*UNIT,55*UNIT,6*UNIT,6*UNIT);
+            ctx.fillRect(45*UNIT,50*UNIT,6*UNIT,6*UNIT);
+            ctx.fillRect(40*UNIT,45*UNIT,6*UNIT,6*UNIT);
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Drawing</h1>
+    </header>
+    <nav>
+        <a href="drawing.html">Back to Drawing</a>
+    </nav>
+    <section>
+        <canvas id="myCanvas" width="1500" height="700"></canvas>
+    </section>
+    <footer>
+        <p>&copy; 2019</p>
+    </footer>
+</body>
+
+</html>
