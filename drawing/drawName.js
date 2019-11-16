@@ -1,4 +1,6 @@
-function drawName() {
+function drawName(x,y) {
+    ctx.save();
+    ctx.translate(x * UNIT, y * UNIT);
     // ctx.fillRect(x,y,w,h);
     ctx.fillRect(1 * UNIT, 0 * UNIT, 2 * UNIT, 1 * UNIT);
     ctx.fillRect(3 * UNIT, 0 * UNIT, 1 * UNIT, 4 * UNIT);
@@ -39,4 +41,5 @@ function drawName() {
     ctx.fillRect(16 * UNIT, 11 * UNIT, 2 * UNIT, 1 * UNIT);
     ctx.fillRect(18 * UNIT, 9 * UNIT, 1 * UNIT, 2 * UNIT);
     ctx.fillRect(17 * UNIT, 9 * UNIT, 1 * UNIT, 1 * UNIT);
+    ctx.restore();
 }
