@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" href = "../style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Optionals</h1>
+        </header>
+        <nav>
+            <a href="notes.html">Back to Notes</a>
+        </nav>
+        <section>
+            <h2>Nil</h2>
+            <p>Nil indicates that a value is missing</p>
+            <p>It is used when the value is unavailable, which is handy in many situations</p>
+            <img src="../images/carexamplefornil.png">
+            <p>In this example, the "?" is attached at the end of each type to identify that the value may be nil. Since some cars have not been released or had the name announced, this feature is necessary.</p>
+            <br>
+            <h2>Force-unwrap</h2>
+            <p>Use force-unwrap operator "!" after an optional value to access its underlying value. Force-unwrapping an optional value will result in a crash if the value is nil</p>
+            <img src="../images/optionalsnametest111.png">
+            <p>It is good practice to compare it to nil first because there will be an error if you force-unwrapped an optional that doesn't contain a value.</p>
+            <br>
+            <h2>Optional Binding</h2>
+            <p>Optional Binding unwraps the optional, and if it contains a value, assigns the value to a constant as a non-optional type, making it safe to work with. The following is the syntax for optional binding.</p>
+            <img src="../images/optionalbindingexmapleforsyntax.png">
+            <p>If someOptional has a value, the value is assigned to constantName and is available only within the braces. An example would be...</p>
+            <img src="../images/carnameexampleforoptionalbinding.png">
+            <p>Just like other if statements, an else clause can be added</p>
+            <h2>Functions and Optionals</h2>
+            <img src="../images/stringforfunctioninoptionalsdads.png">
+            <br>
+            <img src="../images/unavailablestringforfunciotnasodpadaskd.png">
+            <p>Swift infers possibleNumber to be an Int? type because the initializer for Int that takes a String as a parameter may or may not be able to sucessfully convert the String to an Int. If string can be converted into an Int, possibleNumber will hold that value. If it can't, possibleNumber will be nil.</p>
+            <br>
+            <p>If you want to create a function that accepts an optional as an argument, simply update the type in the parameter list</p>
+            <img src="../images/functionexampleforsimplycjangimgthefuctionasdoper.png">
+            <br>
+            <img src="../images/missingthingsadadsadasdadasd.png">
+            <p>Since the name of car, release date, and value, may not be announced, we allow those parameters to be nil. Since the return value may be nil, I also applied the "?" to the return value</p>
+            <br>
+            <h2>Failable Initializer</h2>
+            <p>An initializer that might return nil is a failable initializer</p>
+            <img src="../images/carbuyerbudgetexampleforoptionals.png">
+            <p>The "?" after init tells Swift that this initializer may return nil.</p>
+            <p>Optional binding can be used to safely unwrap</p>
+            <img src="../images/carbuyerbudhetjnasddasd.png">
+            <h2>Optional Chaining</h2>
+            <p>It is possible for an optional value to have optional properties, which you may think of as a box within a box. These are called nested optionals</p>
+            <p>Unwrapping nested optionals can require a lot of code, so there is an efficient way to do so, it is called Optional Chaining</p>
+            <img src="../images/classpersonifletsdsad.png">
+            <br>
+            <img src="../images/hardversionasdjnaskjdnasjkdansd.png">
+            <p>This lengthy block of code can be simplified with Optional Chaining</p>
+            <img src="../images/optionalchaningexamplewitperson.png">
+            <br>
+            <h2>Implicitly Unwrapped Optionals</h2>
+            <img src="../images/implicitlyunwrappedoptionalsexampledasls.png">
+            <p>Unwraps automatically. Should only be used when need to initialize an object without supplying the value and you’ll be giving the object a value soon afterwards</p>
+        </section>
+        <footer>
+            <p id="black">&copy; 2020</p>
+        </footer>
+    </body>
+</html>

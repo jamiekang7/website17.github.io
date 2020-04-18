@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Strings</h1>
+        </header>
+        <nav>
+            <a href="notes.html">Back to Notes</a>
+        </nav>
+        <section>
+            <h2>String Literal</h2>
+            <p>A string literal is a raw representation of a String value. You write a string literal by surrounding a set of characters with double quotation marks (""). </p>
+            <img src = "../images/strangemansmartkid.png">
+            <p>By assigning a string to a constant, it can't be motified. By assigning a string to a variable, you're allowing the string to change.</p>
+            <p>If your string literal is multiple lines, then use triple quotation marks (""").</p>
+            <img src="../images/string examplelistofcars.png">
+            <p>If the string will include double quotes, you'll need to use the backslash (\), known in Swift as the escape character because you are escaping the string</p>
+            <img src="../images/letdialoguemarksaidwhatsup.png">
+            <p>You can use the escape character with other letters and symbols to produce specific results:</p>
+            <img src="../images/escapecharacterwithotherlettersandsymbols.png">
+            <p>Often, you would want to start with an empty string, and add to it over time. This requires it to be a variable since it is changeable. Use the following syntax to start the string without any text</p>
+            <img src="../images/varmystring=.png">
+            <p>If you need to make sure if a Swift string is empty, use the boolean property, isEmpty</p>
+            <img src = "../images/ifmystringis.empty.png">
+            <p>Individual characters are of type Character. But since Strings are much more common in programming than individual characters, Swift will always infer the type of a collection of characters - or even a single character - as a String, unless you specify otherwise with a type annotation</p>
+            <img src = "../images/letz=stringletf=character.png">
+            <br>
+            <h2>Concatenation and Interpolation</h2>
+            <p>You can combine strings using the "+" operator. You can use "+" to create a new String value from multiple String values. This is called concatenation.</p>
+            <img src="../images/stringinterpolation.png">
+            <p>If the existing String is a variable, you can use the += operator to add to it or modify it</p>
+            <img src="../images/varcarmodels64.png">
+            <p>Swift provides a syntax, known as string interpolation, that makes the inclusion of constants, variables, literals, and expressions easier. String interpolation allows you to easily combine many values into a single String constant or variable.</p>
+            <p>You can insert the raw value of a constant or variable into a String by preceding the name with a backslash \ and wrapping the name in parenthesis ().</p>
+            <img src="../images/printjamieis14yearsold.png">
+            <h2>String Equality and Comparison</h2>
+            <p>Developers often need to compare String values to see if they're equal to each other</p>
+            <p>Just as you do for numbers, you can check for equality between two strings using the == operator. As you might expect, == checks for identical characters in the same order. Since uppercase characters aren't identical to lowercase characters, the strings have the same value if the case of each character also matches.</p>
+            <img src="../images/theyarenotthesamecountries.png">
+            <p>If you want to ignore the capitalization of a string when checking for string equality, you can use the lowercased() method to normalize the two, comparing an all-lowercase version of the string with an all-lowercase version of the calling string</p>
+            <img src="../images/modelnumberexample.png">
+            <p>If you want to match the beginning or the end of the string, you can use the hasPrefix(_:) or the hasSuffix(_:) method. Just like ==, these matches are case sensitive.</p>
+            <img src="../images/prefixsuffix.png">
+            <p>Maybe you want to check if one String is somewhere within another String. You can use the contains(_:) method to return a Boolean value that indicates whether or not the substring was found.</p>
+            <img src="../images/youarewearingnikeshoes.png">
+            <p>Since a string is a collection of characters, its length is equal to the total number of characters. The size of any collection can be determined using its count property. You can use this property to compare strings or to evaluate whether strings meet a certain requirement.</p>
+            <img src="../images/passwordisshorthaveatleast10characters.png">
+            <br>
+            <h2>More Advanced String Topics</h2>
+            <p>Few Useful String Properties and Methods</p>
+            <img src="../images/startindexendindex.png">
+            <br>
+            <img src="../images/usefulstringmethods.png">
+            <h2>Unicode</h2>
+            <p>Every Swift String adheres to an international computing standard called Unicode. Unicode compliance allows Swift to go beyond the short list of letters and symbols in the English language. Instead, Unicode encompasses over 128,000 different characters used across multiple languages. This includes accents on characters (é), emoji (🐮), symbols (∞), Kanji (七), and other specialized characters. Unicode ensures that the length of these characters are rational, so that "e," "é," and "🐮" each have a correct length of 1. In addition, Unicode supports text that reads right to left, as well as left to right.</p>
+            <img src="../images/unicodecowexample.png">
+        </section>
+        <footer>
+            <p id="black">&copy; 2019</p>
+        </footer>
+    </body>
+</html>

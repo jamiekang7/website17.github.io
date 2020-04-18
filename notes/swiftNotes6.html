@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Functions</h1>
+        </header>
+        <nav>
+            <a href="notes.html">Back to Notes</a>
+        </nav>
+        <section>
+            <p>The idea of taking something that is complex and defining a simpler way to refer to it is an abstraction, and a function is one of the fundamental ways to create an abstraction in code </p>
+            <br>
+            <h2>Defining A Function</h2>
+            <img src="../images/functionlayoutnjkdsfjsdfndsjf.png">
+            <p>For tasks that require no additional inputs, there will be no function parameters.</p>
+            <img src="../images/eat dinner function.png">
+            <p>Some functions need to be more specific, so you use parameters </p>
+            <img src="../images/makedinnerfuctionwitparameters.png">
+            <p>Once a function has been properly declared, you can call it, or execute it, from anywhere just by writing it's name</p>
+            <br>
+            <h2>Parameters</h2>
+            <p>To specify a function with a parameter, insert a name for the value, a colon (:), and the value's type-all inside the parentheses. For example, say you wanted to write a function called triple that takes in an Int, triples the value, and then prints it. </p>
+            <img src="../images/functiontripleparameterexample.png">
+            <p>To pass multiple arguments to a function, you'll need to seperate each parameter with a comma (,).</p>
+            <img src="../images/multiplyfirstnumbersecondnumberresultis160.png">
+            <br>
+            <h2>Argument Labels</h2>
+            <p>Instead of having the label for each argument within a function to have the same name internally as it does externally, you can have your function to read a little more cleanly</p>
+            <img src="../images/toandfromargumentlabelexamplefornotesakmdas.png">
+            <p>You can see that 'to' and 'and' are very poor names, so if you want the name of the constant to differ from the argument label, you can specify an external name before the local name. </p>
+            <img src="../images/senttojackwrittenbyjamiewndksma.png">
+            <p>If a function is clearer without an argument label, you can omit it.</p>
+            <p>To omit the argument label, use _ in place of the external name</p>
+            <img src="../images/omitsnjdkjnansdhjbdsfjhbsfhjd.png">
+            <h2>Default Parameter Values</h2>
+            <p>There are times where you want to change a value every once in a while. So you can set up parameters with default values, this way you can call the function with or without the parameter. If the parameter is unspecified, the function will simply use the default value. You'll need to place all parameters with default values at the end of the list, and these parameters must all have argument labels. </p>
+            <img src="../images/floydmannyfuncexample.png">
+            <br>
+            <h2>Return Values</h2>
+            <p>It is unlikely you'll always want to print "The result is" before the result from "divide". Instead, it might make more sense if the function simply returned the new value. To do so, you'll need to adjust the function declaration to have a return value and to specify the value's type. You've learned that multiplying two Int types will always result in an Int, so that's the return type you'll use.</p>
+            <img src="../images/funcdividefirstnumversdnfkjads.png">
+            <p>Within the function body use the return keyword to specify what the return function will return. The following example returns result </p>
+            <img src="../images/funcdividesajkndasdna.png">
+            <p>The function can be written without the constant</p>
+            <img src="../images/withoutconstantsndkajnds.png">
+            <p>To call this function and use the return value, assign the return value to a constant.</p>
+            <img src="../images/lettheresultdivide12312j3i12o3n12.png">
+            <p>If you don't need to use theResult ever again in the future, you could use the function inside the print statement and skip assigning the value to a constant</p>
+            <img src="../images/donthavetousetheresulteveragain.png">
+        </section>
+        <footer>
+            <p id="black">&copy; 2019</p>
+        </footer>
+    </body>
+</html>
