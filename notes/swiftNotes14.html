@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" href = "../style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Constant and Variable Scope</h1>
+        </header>
+        <nav>
+            <a href="notes.html">Back to Notes</a>
+        </nav>
+        <section>
+            <h2>Global and Local Scope</h2>
+            <p>Global scope is defined outside of a function, loop, or {} in general.</p>
+            <p>Local scope is the opposite as it is defined in a function, loop, or {}.</p>
+            <p>A global scope can be used anywhere in the file, while local scopes can only be used in the function, loop, or {} it was defined in.</p>
+            <img src="../images/globalscopeinlocalscopeexample.png">
+            <p>If the local value was attempted to be printed out outside of the {}, then there will be an error</p>
+            <img src="../images/errorusinglocalwitglobaloutsdie.png">
+            <br>
+            <h2>Variable Shadowing</h2>
+            <p>Variable Shadowing is when a scope is defined in two different locations. They are different as one is usually global and one is local.</p>
+            <img src="../images/cardefinedtwicecuzvariableshadowing.png">
+            <p>You can see "car was defined twice"</p>
+            <p>In fact, Variable Shadowing can be used with the if-let syntax, especially when unwrapping an optional value.</p>
+            <img src="../images/ifletvarialeshitvairableshadowing.png">
+            <p>This can also be written in a guard-statement</p>
+            <img src="../images/guardletvariableshitvariableshadowing.png">
+            <br>
+            <h2>Shadowing and Initializers</h2>
+            <p>As your writing an Initializer, you can use the assign the same named variables to each other to keep the code simple and logical. The self syntax makes it clear that the properties are set to the properties in the parameters passed into the initializer.</p>
+            <img src="../images/shadowingandinitializiersfasjwefkndsd.png">
+        </section>
+        <footer>
+            <p id="black">&copy; 2020</p>
+        </footer>
+    </body>
+</html>
